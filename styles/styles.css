@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Eigen font;
+    src: url(/assets/amberfont-Regular.otf) format(opentype);
+}
+
+p {
+    font-family:'Eigen font';
+}
