@@ -28,7 +28,7 @@ body {
     font-family: 'Soligant';
     src: url(/fonts/soligant.otf) format('opentype');
     font-style: normal;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 @font-face {
