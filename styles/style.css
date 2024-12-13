@@ -210,6 +210,14 @@ body {
     }
 }
 
+#menu a:hover {
+    color: var(--primary-text-color);
+
+    @media screen and (min-width: 1000px) {
+        color: var(--highlight-color);
+    }
+}
+
 .header-nav a.actief {
     transform: scale(110%);
     transition: 0.2s ease-in-out;

@@ -149,6 +149,10 @@ a {
      text-decoration: none;
 }
 
+a:hover {
+    color: #BF1C4B;
+}
+
 .btn-red {
     font-family: 'Barlow-regular';
     color: var(--secondary-text-color);
