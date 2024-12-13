@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    margin: 0;
 }
 
 body {
@@ -17,8 +18,7 @@ body {
     color: var(--text-darkgreen);
     padding: 15px 0;
     transition: top 0.3s;
-    position: fixed;
-    width: 100%;
+    position:sticky;
     overflow: hidden;
     z-index: 99;
     border-bottom: 1px solid var(--line-gray);
@@ -106,7 +106,7 @@ body {
 
 /* Logo Bieb in Bloei*/
 .logo-nav img {
-    height: 3em;
+    height: 2em;
 
     @media screen and (min-width: 820px) {
         width: 5em;
@@ -221,4 +221,52 @@ body {
 .header-nav a.actief {
     transform: scale(110%);
     transition: 0.2s ease-in-out;
+}
+
+
+
+/* -------------------------------- Sectie 1 'Amber' --------------------------------- */
+.sectie-amber {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    z-index: 1;
+
+     @media screen and (min-width: 740px) {
+         width: 55%;
+         align-self: center;
+     }
+}
+
+.buttons-amber {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+}
+
+.element-amber-left {
+    position: absolute;
+    z-index: 0;
+    top: 5.5em;
+    right: -10em;
+    rotate: 90deg;
+
+     @media screen and (min-width: 740px) {
+            top: 5em;
+            left: 0;
+            rotate: 0deg;
+     }
+}
+
+.element-amber-right {
+    position: absolute;
+    display: none;
+    
+     @media screen and (min-width: 740px) {
+        display: block;
+         position: absolute;
+         right: 0;
+         top: 10em;
+     }
 }
