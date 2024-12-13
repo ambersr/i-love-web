@@ -9,9 +9,5 @@
 }
 
 p {
-    font-family:'Eigen font';
-}
-
-fieldset:has(:user-invalid) {
-    background: #faa;
+    font-family: 'Eigen font';
 }
