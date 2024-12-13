@@ -26,22 +26,21 @@ body {
 /* @font-face (typografie) */
 @font-face {
     font-family: 'Soligant';
-    src: url(../fonts/soligant.otf) format('opentype'),
-         url(/fonts/soligant.ttf) format('truetype');
+    src: url(../fonts/soligant.otf) format('opentype');
     font-style:normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Barlow-regular';
-    src: url(/fonts/barlow-regular.ttf) format('truetype');
+    src: url(../fonts/barlow-regular.ttf) format('truetype');
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Barlow-medium';
-    src: url(/fonts/barlow-medium.ttf) format('truetype');
+    src: url(../fonts/barlow-medium.ttf) format('truetype');
     font-style: medium;
     font-weight: 700;
 }
