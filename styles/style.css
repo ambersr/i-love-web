@@ -262,11 +262,114 @@ body {
 .element-amber-right {
     position: absolute;
     display: none;
-    
+
      @media screen and (min-width: 740px) {
         display: block;
          position: absolute;
          right: 0;
          top: 10em;
      }
+}
+
+/* -------------------------------- Sectie 2 'Sprintplanning' --------------------------------- */
+.sprintplanning {
+    margin-top: 7em;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    margin-top: -10em;
+    justify-self: center;
+
+     @media screen and (min-width: 740px) {
+         width: 100%;
+     }
+}
+
+@media (max-width: 1000px) {
+    .cards li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 740px) {
+    .cards li:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 740px) {
+    .cards li:nth-child(2) {
+        display: none;
+    }
+}
+
+/* Content */
+.sprintplanning h2 {
+    padding-top: 2em;
+}
+
+.sprintplanning p {
+    padding: 1em 0em;
+    text-align: center;
+}
+
+/* Slider */
+
+
+.slider {
+    overflow: hidden;
+    /* Verbergt alles buiten de slider */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    display: flex;
+    gap: 20px;
+    /* Ruimte tussen de kaartjes */
+    scroll-snap-type: x mandatory;
+    /* Activeert scroll-snapping */
+    overflow-x: scroll;
+    /* Maak horizontaal scrollen mogelijk */
+    scroll-behavior: smooth;
+    /* Soepel scrollen */
+}
+
+.slides::-webkit-scrollbar {
+    height: 8px;
+    /* Hoogte van de scrollbar */
+    background-color: #5c2026;
+    /* Achtergrondkleur van de scrollbar */
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background-color: #e3b0b2;
+    /* Kleur van het schuifblokje */
+    border-radius: 10px;
+    /* Maak het schuifblokje afgerond */
+}
+
+
+.slide {
+    flex: 0 0 300px;
+    /* Breedte van elk kaartje */
+    height: 300px;
+    background-color: #5c2026;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e3b0b2;
+    text-align: center;
+    scroll-snap-align: center;
+    /* Zorgt dat de slide in het midden blijft */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
