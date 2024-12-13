@@ -26,7 +26,7 @@ body {
 /* @font-face (typografie) */
 @font-face {
     font-family: 'Soligant';
-    src: url(./fonts/soligant.otf) format('opentype');
+    src: url('/fonts/soligant.otf?v=1') format('opentype');
     font-style: normal;
     font-weight: 600;
 }
