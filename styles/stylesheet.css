@@ -9,6 +9,7 @@ body {
     /* Kleuren */
     --primary-background-color: #ffffff;
     --secondary-background-color: #540E22;
+    --footer-color: #FAF5ED;
     --highlight-color: #BF1C4B;
     --primary-text-color: #540E22;
     --secondary-text-color: #fff;
@@ -76,6 +77,13 @@ h4 {
 }
 
 p {
+    font-family: var(--font-paragraph);
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+figcaption {
     font-family: var(--font-paragraph);
     font-size: 16px;
     line-height: 30px;
@@ -223,6 +231,10 @@ a:hover {
 
 .secondary-background-color {
     background-color: var(--secondary-background-color);
+}
+
+.footer-color {
+    background-color: var(--footer-color);
 }
 
 .primary-text-color {
