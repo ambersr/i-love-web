@@ -318,58 +318,78 @@ body {
 }
 
 /* Slider */
-
-
-.slider {
-    overflow: hidden;
-    /* Verbergt alles buiten de slider */
-    width: 100%;
+.timeline {
+    list-style-type: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slides {
-    display: flex;
-    gap: 20px;
-    /* Ruimte tussen de kaartjes */
-    scroll-snap-type: x mandatory;
-    /* Activeert scroll-snapping */
-    overflow-x: scroll;
-    /* Maak horizontaal scrollen mogelijk */
-    scroll-behavior: smooth;
-    /* Soepel scrollen */
-}
-
-.slides::-webkit-scrollbar {
-    height: 8px;
-    /* Hoogte van de scrollbar */
-    background-color: #5c2026;
-    /* Achtergrondkleur van de scrollbar */
-}
-
-.slides::-webkit-scrollbar-thumb {
-    background-color: #e3b0b2;
-    /* Kleur van het schuifblokje */
-    border-radius: 10px;
-    /* Maak het schuifblokje afgerond */
-}
-
-
-.slide {
-    flex: 0 0 300px;
-    /* Breedte van elk kaartje */
-    height: 300px;
-    background-color: #5c2026;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #e3b0b2;
+    padding: 0;
     text-align: center;
-    scroll-snap-align: center;
-    /* Zorgt dat de slide in het midden blijft */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timestamp {
+    margin: auto;
+    margin-bottom: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.timestamp img {
+    padding: 0;
+    z-index: 1;
+}
+
+/* Slide */
+.content-slide {
+    padding: 8em 5em 0em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border-top: 1px solid var(--primary-background-color);
+    position: relative;
+    transition: all 200ms ease-in;
+}
+
+.content-slide p {
+    text-align: left;
+}
+
+.swiper-container {
+    width: 95%;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.swiper-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    overflow-y: auto;
+    justify-content: center;
+}
+
+/* Scrollbar */
+/* .swiper-container::-webkit-scrollbar-track {
+    background: #ffffffb6;
+     border-radius: var(--rounded-btn);
+}
+
+.swiper-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.swiper-container::-webkit-scrollbar-thumb {
+    background: #BF1C4B !important;
+     border-radius: var(--rounded-btn);
+} */
+
+.swiper-slide {
+    text-align: center;
+    font-size: 12px;
+    width: 300px;
+    position: relative;
+    padding: 5em 0em 0em 0em;
+
+    @media (min-width: 740px) {
+          width: 450px;
+    }
+    
 }

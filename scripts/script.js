@@ -45,3 +45,17 @@ slides.addEventListener('scroll', () => {
         slides.scrollLeft = (totalSlides - 2) * slideWidth;
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+

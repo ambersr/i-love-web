@@ -196,6 +196,26 @@ a:hover {
     transition: 0.2s ease-in-out;
 }
 
+.btn-arrow-white {
+    padding: 0.8em 0.8em;
+    display: flex;
+    align-items: center;
+    border-radius: var(--rounded-btn);
+    border: 1px solid var(--primary-background-color);
+    rotate: -25deg;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-arrow-white:hover {
+    rotate: 0deg;
+     transition: 0.2s ease-in-out;
+     background-color: var(--primary-background-color);
+}
+
+.btn-arrow-white:hover svg path {
+    fill: var(--primary-text-color);
+}
+
 /* Kleuren */
 .primary-background-color {
     background-color: var(--primary-background-color);
