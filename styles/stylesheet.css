@@ -171,7 +171,6 @@ a:hover {
     font-family: 'Barlow-regular';
     color: var(--secondary-text-color);
     background-color: var(--highlight-color);
-    color: var(--secondary-text-color);
     padding: 0.8em 1.5em 0.8em 1.5em;
     border-radius: var(--rounded-btn);
     border: 1px solid var(--highlight-color);

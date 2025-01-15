@@ -5,10 +5,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Love Web - Amber Schalker</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+
+    <!-- Navigatie + menu items -->
+    <header class="header-nav">
+
+        <div class="logo-header">
+            <!-- Logo -->
+            <a class="logo-nav" href="index.html" aria-label="Home">
+                <img src="assets/elements/logo-as.svg" alt="logo Amber Schalker">
+            </a>
+        </div>
+
+
+        <div class="wrapper-header">
+            <!-- Menu items -->
+            <nav class="nav-header">
+                <!-- Hamburger knop -->
+                <button class="checkbtn color2" id="menuButton">
+                    <img src="assets/icons/hamburger-icon.svg" alt="hamburger menu">
+                </button>
+
+                <ul id="menu" aria-label="Menu openen/sluiten">
+                    <li><a href="over-mij.html">Over mij</a></li>
+                    <li><a href="digital-garden.html">Digital Garden</a></li>
+                    <li><a href="i-love-web.html">I Love Web</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-header">
+                <a class="btn-mail" href="#"><img src="assets/icons/mail-icon.svg" alt=""></a>
+                <a class="btn-red" href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="divider-nav"></div>
+
+    </header>
+
+
+
+
+    <div class="tab-container width">
+        <!-- Tab buttons: each button represents a tab and has an icon -->
+        <div class="tabs">
+            <button class="tab-link active" data-tab="home">
+                <span>Sprint 6</span>
+            </button>
+            <button class="tab-link" data-tab="services">
+                <span>Sprint 7</span>
+            </button>
+            <button class="tab-link" data-tab="about">
+                <span>Sprint 8</span>
+            </button>
+            <button class="tab-link" data-tab="contact">
+                <span>Sprint 9</span>
+            </button>
+        </div>
+
+        <!-- Content for each tab, initially only the 'Home' tab content is visible -->
+        <div class="tab-content active" id="home">
+
+            <div class="nav-wrapper">
+
+                      <nav class="nav-weken secondary-background-color">
+
+                      <h3 class="secondary-text-color">Kies een week:</h3>
+                      <a class="secondary-text-color" href="#sprint-6-week-1">Week 1 (22/09/24 - 15/09/24)</a>
+                      <a class="secondary-text-color" href="#sprint-6-week-2">Week 2 (22/09/24 - 15/09/24)</a>
+                      <a class="secondary-text-color" href="#">Week 3 (22/09/24 - 15/09/24)</a>
+                      <a class="secondary-text-color" href="#">Week 4 (22/09/24 - 15/09/24)</a>
+                      <a class="secondary-text-color" href="#">Week 5 (22/09/24 - 15/09/24)</a>
+
+                  </nav>
+
+            </div>
+
+             <div class="week">
+
+                 <ul class="dagen">
+
+                    <!-- Week 1 dag 1 -->
+                     <li class="dag" id="sprint-6-week-1">
+
+                        <div class="datum">
+                                <p class="datum-week">Week 1</p>
+                                <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">22 September
+                                    20224</p>
+                        </div>
+
+                         <h4>Hier komt een titel</h4>
+                         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum netus
+                             lobortis velit elementum erat. Lacus praesent vestibulum era. Lorem ipsum odor amet,
+                             consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis velit
+                             elementum erat. Lacus praesent vestibulum era.</p>
+
+                         <h4>Hier komt een titel</h4>
+                         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum
+                             netus
+                             lobortis velit elementum erat. Lacus praesent vestibulum era. Lorem ipsum odor amet,
+                             consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis velit
+                             elementum erat. Lacus praesent vestibulum era.</p>
+
+                         <img class="img-dag" src="/assets/images/parijs-amber.jpg" alt="">
+
+                     </li>
+
+                     <!-- Week 1 dag 2 -->
+                     <li class="dag">
+
+                         <div class="datum">
+                             <p class="datum-week">Week 1</p>
+                             <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">22 September
+                                 20224</p>
+                         </div>
+
+                         <h4>Hier komt een titel</h4>
+                         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum netus
+                             lobortis velit elementum erat. Lacus praesent vestibulum era. Lorem ipsum odor amet,
+                             consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis velit
+                             elementum erat. Lacus praesent vestibulum era.</p>
+
+                     </li>
+
+                 </ul>
+
+                  <ul class="dagen">
+
+                      <!-- Week 2 dag 1 -->
+                      <li class="dag" id="sprint-6-week-2">
+
+                          <div class="datum">
+                              <p class="datum-week">Week 2</p>
+                              <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">22 September
+                                  20224</p>
+                          </div>
+
+                          <h4>Hier komt een titel</h4>
+                          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum
+                              netus
+                              lobortis velit elementum erat. Lacus praesent vestibulum era. Lorem ipsum odor amet,
+                              consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis velit
+                              elementum erat. Lacus praesent vestibulum era.</p>
+
+                          <h4>Hier komt een titel</h4>
+                          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum
+                              netus
+                              lobortis velit elementum erat. Lacus praesent vestibulum era. Lorem ipsum odor amet,
+                              consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis velit
+                              elementum erat. Lacus praesent vestibulum era.</p>
+
+                          <img class="img-dag" src="/assets/images/parijs-amber.jpg" alt="">
+
+                      </li>
+
+                      <!-- Week 2 dag 2 -->
+                      <li class="dag">
+
+                          <div class="datum">
+                              <p class="datum-week">Week 2</p>
+                              <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">22 September
+                                  20224</p>
+                          </div>
+
+                          <h4>Hier komt een titel</h4>
+                          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum
+                              netus
+                              lobortis velit elementum erat. Lacus praesent vestibulum era. Lorem ipsum odor amet,
+                              consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis velit
+                              elementum erat. Lacus praesent vestibulum era.</p>
+
+                      </li>
+
+                  </ul>
+
+            </div>
+
+        </div>
+
+        <div class="tab-content" id="services">
+            <h2>Our Services</h2>
+            <p>Details about services go here.</p>
+        </div>
+        <div class="tab-content" id="about">
+            <h2>About Us</h2>
+            <p>Learn more about us here.</p>
+        </div>
+        <div class="tab-content" id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch via this tab.</p>
+        </div>
+    </div>
 
 
     <script src="scripts/script.js"></script>
