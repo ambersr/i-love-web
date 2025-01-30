@@ -1,40 +1,56 @@
 
-//    const menuButton = document.querySelector("#menuButton");
+   const menuButton = document.querySelector("#menuButton");
 
-//    const hetMenu = document.querySelector("#menu");
+   const hetMenu = document.querySelector("#menu");
 
-//    menuButton.addEventListener("click", toggleMenu)
+   menuButton.addEventListener("click", toggleMenu)
 
-//    function toggleMenu() {
-//    hetMenu.classList.toggle("open");
-//    }
-
-
+   function toggleMenu() {
+   hetMenu.classList.toggle("open");
+   }
 
 
 
 
 
-// // Select all tab links and tab content elements
-// const tabLinks = document.querySelectorAll('.tab-link');
-// const tabContents = document.querySelectorAll('.tab-content');
-
-// // Loop through each tab link and add a click event listener
-// tabLinks.forEach(link => {
-//     link.addEventListener('click', () => {
-//         // Remove 'active' class from all tab links and tab contents
-//         tabLinks.forEach(tab => tab.classList.remove('active'));
-//         tabContents.forEach(content => content.classList.remove('active'));
-
-//         // Add 'active' class to the clicked tab and its corresponding content
-//         link.classList.add('active');
-//         document.getElementById(link.getAttribute('data-tab')).classList.add('active');
-//     });
-// });
 
 
+// Select all tab links and tab content elements
+const tabLinks = document.querySelectorAll('.tab-link');
+const tabContents = document.querySelectorAll('.tab-content');
+
+// Loop through each tab link and add a click event listener
+tabLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Remove 'active' class from all tab links and tab contents
+        tabLinks.forEach(tab => tab.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        // Add 'active' class to the clicked tab and its corresponding content
+        link.classList.add('active');
+        document.getElementById(link.getAttribute('data-tab')).classList.add('active');
+    });
+});
 
 
+
+
+let searchBar = document.getElementById('searchbar');
+
+searchBar.addEventListener('input', function() {
+    console.log("Input event triggered!");  // Debugging log
+    let searchValue = searchBar.value.toLowerCase();
+    let items = document.querySelectorAll('.experiment');
+
+    for (let i = 0; i < items.length; i++) {
+        let text = items[i].textContent.toLowerCase();
+        if (text.includes(searchValue)) {
+            items[i].classList.remove('hidden');
+        } else {
+            items[i].classList.add('hidden');
+        }
+    }
+});
 
 
 

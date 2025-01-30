@@ -7,6 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 /* Navigatie + menu items */
@@ -362,7 +363,7 @@ body {
 .swiper-wrapper {
     display: inline-flex;
     flex-direction: row;
-    overflow-y: auto;
+    overflow-y: hidden;
     justify-content: center;
 }
 
@@ -638,9 +639,30 @@ footer h3 {
 
 /* ---------------------------------------------- I love web ------------------------------------------------ */
 
+/* Inleiding I Love Web */
+.inleiding-ilw {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    align-items: center;
+    z-index: 100;
+
+
+    p {
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: 740px) {
+            width: 40em;
+        }
+    }
+}
+
 /* TAB CONTAINER STYLES */
 .tab-container {
     width: 100%;
+    z-index: 100;
+    padding-top: 2em;
 }
 
 /* TAB BUTTON STYLES */
@@ -689,6 +711,7 @@ footer h3 {
     overflow: hidden;
     transition: opacity 0.5s ease, height 0s ease 0.5s;
     display: none;
+    z-index: 10;
 }
 
 .tab-content.active {
@@ -782,4 +805,120 @@ footer h3 {
      @media screen and (min-width: 740px) {
              padding: 0em 0em 1.5em 0em;
      }
+}
+
+
+/* ---------------------------------------------- Digital Garden ------------------------------------------------ */
+
+form.width {
+    width: 100%;
+    z-index: 100;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3em;
+    padding-bottom: 1em;
+
+    input.search {
+        width: 20em;
+        border: 1px solid var(--primary-text-color);
+        display: block;
+        padding: 1em 1em 1em 2.5em;
+        background: transparent url("/assets/icons/arrow-right-icon.svg") no-repeat 13px;
+        border-radius: 100em;
+        font-size: 16px;
+
+         @media screen and (min-width: 740px) {
+              width: 25em;
+         }
+    }
+
+    input:focus {
+        border: 1px solid;
+
+        &:focus {
+            outline: none var(--primary-text-color);
+        }
+
+        textarea:focus {
+            outline: none;
+
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Kaartjes experimenten */
+
+.experimenten {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3em;
+
+    .wrapper-experimenten {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+        
+
+         .experiment {
+             display: flex;
+             flex-direction: row;
+             padding: 1.5em;
+             border: 1px solid var(--primary-text-color);
+             width: 45%;
+             justify-content: space-between;
+             transition: .2s ease-in-out;
+             align-items: center;
+
+             &:hover {
+                translate: 0px -10px;
+                transition: .2s ease-in-out;
+             }
+
+             &:hover .btn-arrow-red {
+                rotate: -30deg;
+                transition: .2s ease-in-out;
+             }
+
+             .info {
+                 display: flex;
+                 flex-direction: column;
+                 gap: 0.6em;
+
+                 h2 {
+                     font-size: 20px;
+                 }
+
+                 .datum-dag {
+                     padding: 0;
+                 }
+             }
+
+             .btn-arrow-red {
+                background-color: #8B1839;
+                width: 2.7em;
+                height: 2.7em;
+                border-radius: 100em;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                transition: .2s ease-in-out;
+
+                img {
+                    width: 20px;
+                }
+             }
+
+         }
+
+    }
 }
