@@ -133,7 +133,7 @@ body {
     background-color: #fff;
 }
 
-.btn-mail {
+a.btn-mail {
     width: 3em;
     height: 3em;
     display: flex;
@@ -142,10 +142,19 @@ body {
     background-color: var(--primary-background-color);
     border: 1px solid var(--highlight-color);
     border-radius: var(--rounded-btn);
+
+    &:hover svg.mail-icon{
+        fill: #fff;
+    }
 }
 
-.btn-mail img {
+.mail-icon {
+    fill: #8B1839;
     height: 1em;
+    width: 1em;
+}
+.btn-mail:hover .mail-icon {
+    fill: #fff !important;
 }
 
 .btn-mail:hover {
