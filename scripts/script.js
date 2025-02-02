@@ -1,14 +1,23 @@
+// ----------------------- Hamburger menu -------------------------
 
-   const menuButton = document.querySelector("#menuButton");
+const menuButton = document.querySelector("#menuButton"); // Selecteert de knop met het id 'menuButton'
+const hetMenu = document.querySelector("#menu"); // Selecteert het menu-element met het id 'menu'
+const hamburgerIcon = document.querySelector(".img-hamburger"); // Selecteert het hamburgericoon
 
-   const hetMenu = document.querySelector("#menu");
+menuButton.addEventListener("click", toggleMenu); // Als je het menu openklikt, roept hij 'toggleMenu' aan
 
-   menuButton.addEventListener("click", toggleMenu)
+function toggleMenu() { // Voegt of verwijdert de class 'open' van het menu-element 'hetMenu'
+    hetMenu.classList.toggle("open"); // Dit zorgt ervoor dat het menu zichtbaar wordt of verbergt bij elke klik
 
-   function toggleMenu() {
-   hetMenu.classList.toggle("open");
-   }
-
+    // Verandert de afbeelding afhankelijk van de 'open' class
+    if (hetMenu.classList.contains("open")) {
+        // Als het menu open is, verander de afbeelding naar de 'close' afbeelding
+        hamburgerIcon.src = "./assets/icons/close-icon.svg"; // Zet hier het pad naar je sluit-icoon
+    } else {
+        // Als het menu gesloten is, verander de afbeelding terug naar de 'hamburger' afbeelding
+        hamburgerIcon.src = "./assets/icons/hamburger-icon.svg"; // Zet hier het pad naar je hamburger-icoon
+    }
+}
 
 
 
