@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const tabLinks = document.querySelectorAll('.tab-link');
     const tabContents = document.querySelectorAll('.tab-content');
 
-    // Functie om een tab actief te maken
     function activateTab(tabId) {
         tabLinks.forEach(tab => tab.classList.remove('active'));
         tabContents.forEach(content => content.classList.remove('active'));
@@ -33,20 +32,51 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Check of er een hash in de URL staat en activeer de juiste tab
     if (window.location.hash) {
-        const tabId = window.location.hash.substring(1); // Verwijder de #
-        activateTab(tabId);
+        const targetId = window.location.hash.substring(1); // Verwijder de #
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const parentTab = targetElement.closest('.tab-content'); // Check in welke tab het staat
+            if (parentTab) {
+                activateTab(parentTab.id);
+            }
+
+            // Scroll naar het element met een smooth effect
+            setTimeout(() => {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }, 300);
+        }
     }
 
-    // Voeg click event listeners toe aan de tabs
     tabLinks.forEach(link => {
         link.addEventListener('click', () => {
             const tabId = link.getAttribute('data-tab');
             activateTab(tabId);
 
-            // Update de URL zonder de pagina te herladen
             history.pushState(null, null, `#${tabId}`);
+        });
+    });
+
+    // Interne links binnen tabs checken
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const parentTab = targetElement.closest('.tab-content');
+                if (parentTab) {
+                    activateTab(parentTab.id);
+                }
+
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }, 300);
+
+                e.preventDefault();
+                history.pushState(null, null, `#${targetId}`);
+            }
         });
     });
 });
