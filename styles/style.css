@@ -243,7 +243,7 @@ a.btn-mail {
     z-index: 10;
 
      @media screen and (min-width: 740px) {
-         width: 55%;
+         width: 60%;
          align-self: center;
      }
 
@@ -345,7 +345,7 @@ a.btn-mail {
 }
 
 /* Content */
-.sprintplanning h2 {
+/* .sprintplanning h2 {
     padding-top: 6em;
 
      @media screen and (min-width: 740px) {
@@ -356,7 +356,7 @@ a.btn-mail {
          padding-top: 5em;
      }
 
-}
+} */
 
 .sprintplanning p {
     padding: 1em 0em;
