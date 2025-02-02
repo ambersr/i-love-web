@@ -27,17 +27,18 @@ body {
     background-color: #fff;
     top: 0;
     padding: 1em 1em 1em 1em;
+    border-radius: 0em 0em 1em 1em;
 
     @media screen and (min-width: 740px) {
-        padding: 1em 0em;
+        padding: 1em 1em;
     }
 
     @media screen and (min-width: 1000px) {
-        padding: 1em 0em;
+        padding: 1em 1em;
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 1em 0em;
+        padding: 1em 1em;
     }
 }
 
@@ -206,6 +207,13 @@ a.btn-mail {
      }
 
 }
+
+/* Wanneer het menu open is, verander de border-radius van de wrapper-header */
+/* Wanneer het menu open is, pas de border-radius van nav-header aan */
+header:has(#menu.open) .nav-header {
+    border-radius: 0px;
+}
+
 
 .header-nav ul.open {
     height: 100vh;
