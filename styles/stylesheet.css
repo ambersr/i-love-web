@@ -252,45 +252,38 @@ a:hover {
 
 /* Kaartje layout */
 
-.cards {
+/* .cards {
     display: flex;
     flex-direction: row;
-}
+} */
 
-.card-right {
-    display: flex;
-    flex-direction: column;
-    width: 20em;
-    padding: 1em;
-    rotate: -5deg;
-      box-shadow: 2px 2px 10px #000000;
-}
+.cards {
 
-.card-right img {
-    width: 100%;
-    height: 20em;
-}
+    .poleroid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1em;
+        box-shadow: 2px 2px 15px #a3a3a3;
 
-.card-right p {
-    align-self: center;
-    padding-top: 1em;
-}
+        @media screen and (min-width: 740px) {
+            width: 18em;
+        }
 
-.card-left {
-    display: flex;
-    flex-direction: column;
-    width: 20em;
-    padding: 1em;
-    rotate: 5deg;
-    box-shadow: 2px 2px 10px #000000;
-}
+        img {
+            width: 100%;
+            height: 20em;
+            object-fit: cover;
 
-.card-left img {
-    width: 100%;
-    height: 20em;
-}
+            @media screen and (min-width: 740px) {
+                height: 18em;
+            }
+        }
 
-.card-left p {
-    align-self: center;
-    padding-top: 1em;
+        p {
+            align-self: center;
+            padding-top: 1em;
+        }
+    }
+
 }
