@@ -975,8 +975,8 @@ form.width {
         width: 20em;
         border: 1px solid var(--primary-text-color);
         display: block;
-        padding: 1em 1em 1em 2.5em;
-        background: transparent url("/assets/icons/arrow-right-icon.svg") no-repeat 13px;
+        padding: 1em 1em 1em 2.8em;
+        background: transparent url("../assets/icons/search-icon.svg") no-repeat 18px;
         border-radius: 100em;
         font-size: 16px;
 
