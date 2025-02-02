@@ -15,20 +15,39 @@
 
 
 
-// Select all tab links and tab content elements
-const tabLinks = document.querySelectorAll('.tab-link');
-const tabContents = document.querySelectorAll('.tab-content');
+document.addEventListener("DOMContentLoaded", function() {
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
 
-// Loop through each tab link and add a click event listener
-tabLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        // Remove 'active' class from all tab links and tab contents
+    // Functie om een tab actief te maken
+    function activateTab(tabId) {
         tabLinks.forEach(tab => tab.classList.remove('active'));
         tabContents.forEach(content => content.classList.remove('active'));
 
-        // Add 'active' class to the clicked tab and its corresponding content
-        link.classList.add('active');
-        document.getElementById(link.getAttribute('data-tab')).classList.add('active');
+        const activeTab = document.querySelector(`.tab-link[data-tab="${tabId}"]`);
+        const activeContent = document.getElementById(tabId);
+
+        if (activeTab && activeContent) {
+            activeTab.classList.add('active');
+            activeContent.classList.add('active');
+        }
+    }
+
+    // Check of er een hash in de URL staat en activeer de juiste tab
+    if (window.location.hash) {
+        const tabId = window.location.hash.substring(1); // Verwijder de #
+        activateTab(tabId);
+    }
+
+    // Voeg click event listeners toe aan de tabs
+    tabLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const tabId = link.getAttribute('data-tab');
+            activateTab(tabId);
+
+            // Update de URL zonder de pagina te herladen
+            history.pushState(null, null, `#${tabId}`);
+        });
     });
 });
 
