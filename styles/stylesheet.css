@@ -163,6 +163,7 @@ a {
     color: var(--primary-text-color);
     transition: 0.2s ease-in-out;
      text-decoration: none;
+     color: #BF1C4B;
 }
 
 a:hover {
