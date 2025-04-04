@@ -1,0 +1,22 @@
+h1 {
+    background: linear-gradient(to right, #b998fa, #c19dff, #25005f, #1e004a);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+#playbtn {
+    border: none;
+    border-radius: 100em;
+    background-color: #a675f4;
+    height: 4em;
+    width: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
