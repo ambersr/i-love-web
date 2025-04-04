@@ -784,6 +784,22 @@
              </div>
          </section>
 
+
+<script>
+    const audio = document.getElementById('myAudio');
+    const button = document.getElementById('playPauseBtn');
+
+    button.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            button.textContent = '⏸️'; // Verander icoon naar pauze
+        } else {
+            audio.pause();
+            button.textContent = '▶️'; // Verander icoon terug naar play
+        }
+    });
+</script>
+
      </footer>
 
     <script src="scripts/script.js"></script>
