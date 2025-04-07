@@ -1,0 +1,233 @@
+{% render 'partials/head.liquid' titel:"Home" %}
+
+<img class="element-amber-left" src="assets/images/background-element-left-1.jpg" alt="">
+
+{{ files | json }}
+
+<section>
+    <h2>artieklen</h2>
+    {% for file in files %}
+        <a href="/{{ file | slice:0,-3 }}">{{ file | slice:0,-3 }}</a>
+    {% endfor %}
+</section>
+
+<!-- Sectie 1 'Amber' -->
+<section class="sectie-amber width">
+
+    <h1>I Love Web</h1>
+    <p>Momenteel zit ik in het eerste jaar van de studie Frontend Design & Development, waar ik mij bezighoud met
+        het ontwerpen en ontwikkelen van moderne, interactieve webervaringen. Op deze pagina houd ik mijn
+        experimenten, dagelijkse bezigheden en ontdekkingen binnen de wereld van webontwikkeling bij. <br><br>
+        Neem vooral een kijkje bij mijn experimenten! Hier deel ik mijn creatieve code-uitdagingen, en allerlei toffe
+        projecten waar ik aan werk. Van kleine visuele effecten tot complexe
+        interactieve toepassingen<br><br></p>
+
+    <div class="buttons-amber">
+        <a class="btn-red" href="digital-garden.html">Digital garden</a>
+        <a class="btn-streep" href="daily-journal.html">Bekijk Daily Journal<img src="assets/icons/arrow-right-icon.svg"
+                alt=""></a>
+    </div>
+
+    <img class="element-amber-right" src="assets/images/background-element-rechts-2.jpg" alt="">
+
+</section>
+
+<!-- Sectie 2 'Sprintplanning' -->
+<section class="sprintplanning secondary-background-color secondary-text-color width">
+
+    <h2 class="text-white">Sprintplanning</h2>
+    <p class="text-white">In elke sprint heb ik aan coole projecten gewerkt van verschillende opdrachtgevers.</p>
+    <a class="btn-red" href="daily-journal.html">Bekijk Daily Journal</a>
+
+    <!-- Slider  -->
+    <div class="swiper-container text-center">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="timestamp"><img src="assets/icons/sparkle-icon.jpg" alt=""></div>
+                <a class="content-slide" href="/daily-journal.html#sprint-7">
+                    <h3 class="text-white">Sprint 7</h3>
+                    <p class="text-white">Squadpage & Profile Card</p>
+                    <p class="text-white">Hier komt een stukje tekst over die gaat over de inhoud van sprint 1 en de
+                        werkzaamheden, en hier
+                        komt nog meer informatie over sprint 1 met een link naar het gemaakte werk.</p>
+                    <div class="icon-right-slide">
+                        <svg width="15" height="16" viewbox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.07422 1.62086C6.18359 1.48415 6.40234 1.48415 6.53906 1.62086L12.2539 7.33571C12.3906 7.47243 12.3906 7.66383 12.2539 7.80055L6.53906 13.5154C6.40234 13.6521 6.18359 13.6521 6.07422 13.5154L5.52734 12.9959C5.39062 12.8591 5.39062 12.6404 5.52734 12.531L9.76562 8.2654H0.441406C0.25 8.2654 0.113281 8.12868 0.113281 7.93727V7.17165C0.113281 7.00758 0.25 6.84352 0.441406 6.84352H9.76562L5.52734 2.60524C5.39062 2.49586 5.39062 2.27711 5.52734 2.1404L6.07422 1.62086Z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="timestamp"><img src="assets/icons/sparkle-icon.jpg" alt=""></div>
+                <a class="content-slide" href="/daily-journal.html#sprint-8">
+                    <h3 class="text-white">Sprint 8</h3>
+                    <p class="text-white">Server Side Website</p>
+                    <p class="text-white">Hier komt een stukje tekst over die gaat over de inhoud van sprint 1 en de
+                        werkzaamheden, en hier
+                        komt nog meer informatie over sprint 1 met een link naar het gemaakte werk.</p>
+                    <div class="icon-right-slide">
+                        <svg width="15" height="16" viewbox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.07422 1.62086C6.18359 1.48415 6.40234 1.48415 6.53906 1.62086L12.2539 7.33571C12.3906 7.47243 12.3906 7.66383 12.2539 7.80055L6.53906 13.5154C6.40234 13.6521 6.18359 13.6521 6.07422 13.5154L5.52734 12.9959C5.39062 12.8591 5.39062 12.6404 5.52734 12.531L9.76562 8.2654H0.441406C0.25 8.2654 0.113281 8.12868 0.113281 7.93727V7.17165C0.113281 7.00758 0.25 6.84352 0.441406 6.84352H9.76562L5.52734 2.60524C5.39062 2.49586 5.39062 2.27711 5.52734 2.1404L6.07422 1.62086Z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="timestamp"><img src="assets/icons/sparkle-icon.jpg" alt=""></div>
+                <a class="content-slide" href="/daily-journal.html#sprint-9">
+                    <h3 class="text-white">Sprint 9</h3>
+                    <p class="text-white">interactive functionality</p>
+                    <p class="text-white">Hier komt een stukje tekst over die gaat over de inhoud van sprint 1 en de
+                        werkzaamheden, en hier
+                        komt nog meer informatie over sprint 1 met een link naar het gemaakte werk.</p>
+                    <div class="icon-right-slide">
+                        <svg width="15" height="16" viewbox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.07422 1.62086C6.18359 1.48415 6.40234 1.48415 6.53906 1.62086L12.2539 7.33571C12.3906 7.47243 12.3906 7.66383 12.2539 7.80055L6.53906 13.5154C6.40234 13.6521 6.18359 13.6521 6.07422 13.5154L5.52734 12.9959C5.39062 12.8591 5.39062 12.6404 5.52734 12.531L9.76562 8.2654H0.441406C0.25 8.2654 0.113281 8.12868 0.113281 7.93727V7.17165C0.113281 7.00758 0.25 6.84352 0.441406 6.84352H9.76562L5.52734 2.60524C5.39062 2.49586 5.39062 2.27711 5.52734 2.1404L6.07422 1.62086Z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="timestamp"><img src="assets/icons/sparkle-icon.jpg" alt=""></div>
+                <a class="content-slide" href="/daily-journal.html#sprint-10">
+                    <h3 class="text-white">Sprint 10</h3>
+                    <p class="text-white">Enhanced website</p>
+                    <p class="text-white">Hier komt een stukje tekst over die gaat over de inhoud van sprint 1 en de
+                        werkzaamheden, en hier
+                        komt nog meer informatie over sprint 1 met een link naar het gemaakte werk.</p>
+                    <div class="icon-right-slide">
+                        <svg width="15" height="16" viewbox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.07422 1.62086C6.18359 1.48415 6.40234 1.48415 6.53906 1.62086L12.2539 7.33571C12.3906 7.47243 12.3906 7.66383 12.2539 7.80055L6.53906 13.5154C6.40234 13.6521 6.18359 13.6521 6.07422 13.5154L5.52734 12.9959C5.39062 12.8591 5.39062 12.6404 5.52734 12.531L9.76562 8.2654H0.441406C0.25 8.2654 0.113281 8.12868 0.113281 7.93727V7.17165C0.113281 7.00758 0.25 6.84352 0.441406 6.84352H9.76562L5.52734 2.60524C5.39062 2.49586 5.39062 2.27711 5.52734 2.1404L6.07422 1.62086Z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="timestamp"><img src="assets/icons/sparkle-icon.jpg" alt=""></div>
+                <a class="content-slide" href="/daily-journal.html#sprint-11">
+                    <h3 class="text-white">Sprint 11</h3>
+                    <p class="text-white">pleasurable ui</p>
+                    <p class="text-white">Hier komt een stukje tekst over die gaat over de inhoud van sprint 1 en de
+                        werkzaamheden, en hier
+                        komt nog meer informatie over sprint 1 met een link naar het gemaakte werk.</p>
+                    <div class="icon-right-slide">
+                        <svg width="15" height="16" viewbox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.07422 1.62086C6.18359 1.48415 6.40234 1.48415 6.53906 1.62086L12.2539 7.33571C12.3906 7.47243 12.3906 7.66383 12.2539 7.80055L6.53906 13.5154C6.40234 13.6521 6.18359 13.6521 6.07422 13.5154L5.52734 12.9959C5.39062 12.8591 5.39062 12.6404 5.52734 12.531L9.76562 8.2654H0.441406C0.25 8.2654 0.113281 8.12868 0.113281 7.93727V7.17165C0.113281 7.00758 0.25 6.84352 0.441406 6.84352H9.76562L5.52734 2.60524C5.39062 2.49586 5.39062 2.27711 5.52734 2.1404L6.07422 1.62086Z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</section>
+
+<!-- Sectie 3 'Wie ben ik' -->
+<!-- <div class="sectie-wie width">
+
+        <section class="content">
+
+            <h2>Wie ben ik</h2>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis
+                velit elementum erat. Lacus praesent vestibulum era.
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis
+                velit elementum erat. Lacus praesent vestibulum era Tat ut tellus leo felis convallis condimentum.
+                Parturient arc eleifend mus auctor massa sit? Tellus ante nec orci donec nullam inceptos dictumst
+                curabitur. Himenaeos blandit duis vivamus hac ultrices dui laoreet in.</p>
+            <a class="btn-streep" href="">Naar mijn Digital Garden<img src="assets/icons/arrow-right-icon.svg" alt=""></a>
+
+        </section>
+
+        <div>
+              <ul class="cards2">
+
+                  <li class="card-right primary-background-color primary-text-color">
+                      <img src="assets/images/parijs-amber.jpg" alt="">
+                      <p>Hier komt text</p>
+                  </li>
+
+                  <li class="card-left primary-background-color primary-text-color">
+                      <img src="assets/images/parijs-amber.jpg" alt="">
+                      <p>Hier komt text</p>
+                  </li>
+              </ul>
+        </div>
+    </div> -->
+
+<!-- Sectie 3 Digital Garden -->
+<div class="digital-garden-home width">
+
+    <section class="info">
+        <h2>Digital Garden</h2>
+        <a class="btn-streep" href="digital-garden.html">Bekijk Digital Garden<img
+                src="assets/icons/arrow-right-icon.svg" alt=""></a>
+    </section>
+
+    <div class="wrapper-experimenten">
+
+        <!-- Experiment 1 -->
+        <a class="experiment" target="_blank" href="https://codepen.io/Amber-Schalker/pen/PwYBxXP">
+            <section class="info">
+                <h2>Toevoegen aan winkelwagen animatie</h2>
+                <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">12 januari 2025</p>
+            </section>
+            <div class="btn-arrow-red">
+                <img src="./assets/icons/arrow-right-white.svg" alt="">
+            </div>
+        </a>
+
+        <!-- Experiment 1 -->
+        <a class="experiment" target="_blank" href="https://codepen.io/Amber-Schalker/pen/XJroaZz">
+            <section class="info">
+                <h2>Werkende zoekbalk functie</h2>
+                <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">30 januari 2025</p>
+            </section>
+            <div class="btn-arrow-red">
+                <img src="./assets/icons/arrow-right-white.svg" alt="">
+            </div>
+        </a>
+
+        <!-- Experiment 1 -->
+        <a class="experiment" target="_blank" href="https://codepen.io/Amber-Schalker/pen/EaYVBQE">
+            <section class="info">
+                <h2>Pop up animatie met JS</h2>
+                <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">18 december 2024</p>
+            </section>
+            <div class="btn-arrow-red">
+                <img src="./assets/icons/arrow-right-white.svg" alt="">
+            </div>
+        </a>
+
+        <!-- Experiment 1 -->
+        <a class="experiment" href="https://codepen.io/Amber-Schalker/pen/MWMLMbW">
+            <section class="info">
+                <h2>Responsive grid oefening</h2>
+                <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">22 September
+                    2024</p>
+            </section>
+            <div class="btn-arrow-red">
+                <img src="./assets/icons/arrow-right-white.svg" alt="">
+            </div>
+        </a>
+    </div>
+</div>
+
+{% render 'partials/foot.liquid' %}
