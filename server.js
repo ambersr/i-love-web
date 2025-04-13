@@ -34,7 +34,39 @@ app.use(express.urlencoded({extended: true}))
 
 
 
+// Object waarin weken gekoppeld worden aan sprints
+const sprintMap = {
+  'Week-1': 'Sprint 1',
+  'Week-2': 'Sprint 1',
+  'Week-3': 'Sprint 1',
+  'Week-4': 'Sprint 1',
 
+  'Week-5': 'Sprint 2',
+  'Week-6': 'Sprint 2',
+  'Week-7': 'Sprint 2',
+  'Week-8': 'Sprint 2',
+
+  'Week-9': 'Sprint 3',
+  'Week-10': 'Sprint 3',
+  'Week-11': 'Sprint 3',
+  'Week-12': 'Sprint 3',
+
+  'Week-13': 'Sprint 4',
+  'Week-14': 'Sprint 4',
+  'Week-15': 'Sprint 4',
+  'Week-16': 'Sprint 4',
+
+  'Week-17': 'Sprint 5',
+  'Week-18': 'Sprint 5',
+  'Week-19': 'Sprint 5',
+  'Week-20': 'Sprint 5',
+
+  'Week-21': 'Sprint 6',
+  'Week-22': 'Sprint 6',
+  'Week-23': 'Sprint 6',
+  'Week-24': 'Sprint 6',
+  'Week-25': 'Sprint 11'
+};
 app.get('/', async function(request, response) {
     response.render('index.liquid', {files: files})
 })
