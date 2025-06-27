@@ -1,0 +1,112 @@
+form.width {
+    width: 100%;
+    z-index: 98;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3em;
+    padding-bottom: 1em;
+
+    input.search {
+        width: 20em;
+        border: 1px solid var(--primary-text-color);
+        display: block;
+        padding: 1em 1em 1em 2.8em;
+        background: transparent url("../assets/icons/search-icon.svg") no-repeat 18px;
+        border-radius: 100em;
+        font-size: 16px;
+
+        @media screen and (min-width: 740px) {
+            width: 25em;
+        }
+    }
+
+    input:focus {
+        border: 1px solid;
+
+        &:focus {
+            outline: none var(--primary-text-color);
+        }
+
+        textarea:focus {
+            outline: none;
+
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Kaartjes experimenten */
+
+.experimenten {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3em;
+
+    .wrapper-experimenten {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+
+
+        .experiment {
+            display: flex;
+            flex-direction: row;
+            padding: 1.5em;
+            border: 1px solid var(--primary-text-color);
+            width: 45%;
+            justify-content: space-between;
+            transition: .2s ease-in-out;
+            align-items: center;
+
+            &:hover {
+                translate: 0px -10px;
+                transition: .2s ease-in-out;
+            }
+
+            &:hover .btn-arrow-red {
+                rotate: -30deg;
+                transition: .2s ease-in-out;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 0.6em;
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                .datum-dag {
+                    padding: 0;
+                }
+            }
+
+            .btn-arrow-red {
+                background-color: #8B1839;
+                width: 2.7em;
+                height: 2.7em;
+                border-radius: 100em;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                transition: .2s ease-in-out;
+
+                img {
+                    width: 20px;
+                }
+            }
+
+        }
+
+    }
+}

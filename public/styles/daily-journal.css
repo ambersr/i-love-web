@@ -1,0 +1,164 @@
+.inleiding-ilw {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    align-items: center;
+    z-index: 98;
+
+
+    p {
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: 740px) {
+            width: 40em;
+        }
+    }
+}
+
+/* TAB CONTAINER STYLES */
+.tab-container {
+    width: 100%;
+    z-index: 98;
+    padding-top: 2em;
+}
+
+/* TAB BUTTON STYLES */
+.tabs {
+    display: flex;
+    gap: 0.5em;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.tab-link {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.8em 1.5em 0.8em 1.5em;
+    border-radius: var(--rounded-btn);
+    border: 1px solid var(--highlight-color);
+    color: var(--highlight-color);
+}
+
+.tab-link:hover {
+    background-color: var(--highlight-color);
+    color: var(--secondary-text-color);
+}
+
+.tab-link.active {
+    background-color: var(--highlight-color);
+    color: var(--secondary-text-color);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+
+/* TAB CONTENT STYLES (UPDATED FOR FADE EFFECT) */
+.tab-content {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0s ease 0.5s;
+    display: none;
+    z-index: 10;
+}
+
+.tab-content.active {
+    opacity: 1;
+    height: auto;
+    transition: opacity 0.5s ease, height 0s;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 740px) {
+        flex-direction: row;
+        gap: 1em;
+        width: 100%;
+    }
+
+}
+
+.nav-wrapper {
+    width: 100%;
+
+    @media screen and (min-width: 740px) {
+        width: 25%;
+    }
+}
+
+.nav-weken {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+
+    @media screen and (min-width: 740px) {
+        width: 100%;
+    }
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: 740px) {
+        width: 70%;
+    }
+}
+
+.dagen {
+    @media screen and (min-width: 740px) {
+        width: 100%;
+    }
+}
+
+/* Dag */
+.dag {
+    border: 1px solid #8B1839;
+    padding: 2em;
+    margin: 1em 0em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    @media screen and (min-width: 740px) {
+        margin-top: 0em;
+    }
+
+}
+
+.dag .datum {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.img-dag {
+    width: 100%;
+
+    @media screen and (min-width: 740px) {
+        width: 65%;
+    }
+}
+
+.datum-dag {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+    padding: 0em 0em 0.4em 0em;
+
+    @media screen and (min-width: 740px) {
+        padding: 0em 0em 1.5em 0em;
+    }
+}
