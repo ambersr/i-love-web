@@ -1,3 +1,7 @@
+---
+sprint: Sprint 1
+---
+
 ### Dag 1 (2 september 2024)
 * Wat heb ik vandaag gedaan?
 

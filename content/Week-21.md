@@ -1,3 +1,7 @@
+---
+sprint: Sprint 6
+---
+
 ### Dag 86 (20 januari 2025)
 
 * Wat heb ik vandaag gedaan?

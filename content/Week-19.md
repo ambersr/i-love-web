@@ -1,3 +1,7 @@
+---
+sprint: Sprint 6
+---
+
 ### Dag 76 (6 januari 2025)
 
 - Wat zijn je goede voornemens voor dit jaar? Nieuwe technieken uitproberen? Op tijd komen? Meer uren maken?

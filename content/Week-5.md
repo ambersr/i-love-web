@@ -1,3 +1,7 @@
+---
+sprint: Sprint 2
+---
+
 ### Dag 26 (30 september 2024)
 * Wat heb ik vandaag gedaan?
 

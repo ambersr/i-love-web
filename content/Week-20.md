@@ -1,3 +1,7 @@
+---
+sprint: Sprint 6
+---
+
 ### Dag 81 (13 januari 2025)
 
 * Wat heb ik vandaag gedaan?
