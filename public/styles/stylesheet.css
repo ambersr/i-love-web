@@ -139,7 +139,39 @@ figcaption {
 
 /* Width page */
 
-.width {
+.width-top {
+    padding: 3em 1em 0em 1em;
+
+    @media screen and (min-width: 740px) {
+        padding: 4em 3em 0em 3em;
+    }
+
+    @media screen and (min-width: 1000px) {
+        padding: 5em 3em 0em 3em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 5em 8em 0em 8em;
+    }
+}
+
+.width-btm {
+    padding: 0em 1em 3em 1em;
+
+    @media screen and (min-width: 740px) {
+        padding: 0em 3em 7em 3em;
+    }
+
+    @media screen and (min-width: 1000px) {
+        padding: 0em 3em 7em 3em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0em 8em 6em 8em;
+    }
+}
+
+.width-top-btm {
     padding: 3em 1em 3em 1em;
 
     @media screen and (min-width: 740px) {
