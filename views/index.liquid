@@ -2,17 +2,8 @@
 
 <img class="element-amber-left" src="assets/images/background-element-left-1.jpg" alt="">
 
-{{ files | json }}
-
-<section>
-    <h2>artieklen</h2>
-    {% for file in files %}
-        <a href="/{{ file | slice:0,-3 }}">{{ file | slice:0,-3 }}</a>
-    {% endfor %}
-</section>
-
 <!-- Sectie 1 'Amber' -->
-<section class="sectie-amber width">
+<section class="sectie-amber width-top-btm">
 
     <h1>I Love Web</h1>
     <p>Momenteel zit ik in het eerste jaar van de studie Frontend Design & Development, waar ik mij bezighoud met
@@ -23,8 +14,8 @@
         interactieve toepassingen<br><br></p>
 
     <div class="buttons-amber">
-        <a class="btn-red" href="digital-garden.html">Digital garden</a>
-        <a class="btn-streep" href="daily-journal.html">Bekijk Daily Journal<img src="assets/icons/arrow-right-icon.svg"
+        <a class="btn-red" href="/digital-garden">Digital garden</a>
+        <a class="btn-streep" href="/daily-journal">Bekijk Daily Journal<img src="assets/icons/arrow-right-icon.svg"
                 alt=""></a>
     </div>
 
@@ -33,7 +24,7 @@
 </section>
 
 <!-- Sectie 2 'Sprintplanning' -->
-<section class="sprintplanning secondary-background-color secondary-text-color width">
+<section class="sprintplanning secondary-background-color secondary-text-color width-top-btm">
 
     <h2 class="text-white">Sprintplanning</h2>
     <p class="text-white">In elke sprint heb ik aan coole projecten gewerkt van verschillende opdrachtgevers.</p>
@@ -140,44 +131,12 @@
 
 </section>
 
-<!-- Sectie 3 'Wie ben ik' -->
-<!-- <div class="sectie-wie width">
-
-        <section class="content">
-
-            <h2>Wie ben ik</h2>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis
-                velit elementum erat. Lacus praesent vestibulum era.
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis
-                velit elementum erat. Lacus praesent vestibulum era Tat ut tellus leo felis convallis condimentum.
-                Parturient arc eleifend mus auctor massa sit? Tellus ante nec orci donec nullam inceptos dictumst
-                curabitur. Himenaeos blandit duis vivamus hac ultrices dui laoreet in.</p>
-            <a class="btn-streep" href="">Naar mijn Digital Garden<img src="assets/icons/arrow-right-icon.svg" alt=""></a>
-
-        </section>
-
-        <div>
-              <ul class="cards2">
-
-                  <li class="card-right primary-background-color primary-text-color">
-                      <img src="assets/images/parijs-amber.jpg" alt="">
-                      <p>Hier komt text</p>
-                  </li>
-
-                  <li class="card-left primary-background-color primary-text-color">
-                      <img src="assets/images/parijs-amber.jpg" alt="">
-                      <p>Hier komt text</p>
-                  </li>
-              </ul>
-        </div>
-    </div> -->
-
 <!-- Sectie 3 Digital Garden -->
-<div class="digital-garden-home width">
+<div class="digital-garden-home width-top-btm">
 
     <section class="info">
         <h2>Digital Garden</h2>
-        <a class="btn-streep" href="digital-garden.html">Bekijk Digital Garden<img
+        <a class="btn-streep" href="/digital-garden">Bekijk Digital Garden<img
                 src="assets/icons/arrow-right-icon.svg" alt=""></a>
     </section>
 
@@ -187,7 +146,7 @@
         <a class="experiment" target="_blank" href="https://codepen.io/Amber-Schalker/pen/PwYBxXP">
             <section class="info">
                 <h2>Toevoegen aan winkelwagen animatie</h2>
-                <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">12 januari 2025</p>
+                <p class="date-day"><img src="/assets/icons/calendar-icon.svg" alt="">12 januari 2025</p>
             </section>
             <div class="btn-arrow-red">
                 <img src="./assets/icons/arrow-right-white.svg" alt="">
@@ -198,7 +157,7 @@
         <a class="experiment" target="_blank" href="https://codepen.io/Amber-Schalker/pen/XJroaZz">
             <section class="info">
                 <h2>Werkende zoekbalk functie</h2>
-                <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">30 januari 2025</p>
+                <p class="date-day"><img src="/assets/icons/calendar-icon.svg" alt="">30 januari 2025</p>
             </section>
             <div class="btn-arrow-red">
                 <img src="./assets/icons/arrow-right-white.svg" alt="">
@@ -209,7 +168,7 @@
         <a class="experiment" target="_blank" href="https://codepen.io/Amber-Schalker/pen/EaYVBQE">
             <section class="info">
                 <h2>Pop up animatie met JS</h2>
-                <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">18 december 2024</p>
+                <p class="date-day"><img src="/assets/icons/calendar-icon.svg" alt="">18 december 2024</p>
             </section>
             <div class="btn-arrow-red">
                 <img src="./assets/icons/arrow-right-white.svg" alt="">
@@ -220,7 +179,7 @@
         <a class="experiment" href="https://codepen.io/Amber-Schalker/pen/MWMLMbW">
             <section class="info">
                 <h2>Responsive grid oefening</h2>
-                <p class="datum-dag"><img src="/assets/icons/calendar-icon.svg" alt="">22 September
+                <p class="date-day"><img src="/assets/icons/calendar-icon.svg" alt="">22 September
                     2024</p>
             </section>
             <div class="btn-arrow-red">
@@ -230,4 +189,4 @@
     </div>
 </div>
 
-{% render 'partials/foot.liquid' %}
+{% render "partials/foot.liquid" %}
