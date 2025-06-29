@@ -1,0 +1,23 @@
+<section class="content width-btm">
+
+    <!-- Navigatie weken -->
+    <nav class="week-links dark-red-background">
+        <h3 class="text-white">KIES EEN WEEK:</h3>
+        <ul>
+            {% for w in weeks %}
+            <li><a href="#week-{{ w.slug }}">{{ w.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <!-- Content per week -->
+    <ul class="week">
+        {% for week in weeks %}
+        <li class="day" id="week-{{ week.slug }}">
+            <h2>{{ week.title }}</h2>
+            <div class="markdown-body">{{ week.content | raw }}</div>
+        </li>
+        {% endfor %}
+    </ul>
+
+</section>
