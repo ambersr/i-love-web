@@ -116,19 +116,14 @@ app.get('/day', async (req, res) => {
 
 //   const fileContents = await readFile('content/' + request.params.slug + '.md', { encoding: 'utf8' })
 
-//   const markedUp = marked.parse(fileContents)
+// 404 pagina als de route niet werkt
+ app.use((req, res) => {
+   res.status(404).render("404.liquid", { })
+ })
 
-//    response.render('day.liquid', {
-//     content: markedUp
-//   })
-// })
+// --------------------------- Poort --------------------------------
 
-// Stel het poortnummer in waar Express op moet gaan luisteren
-// Lokaal is dit poort 8000, als dit ergens gehost wordt, is het waarschijnlijk poort 80
 app.set('port', process.env.PORT || 8000)
-
-// Start Express op, haal daarbij het zojuist ingestelde poortnummer op
-app.listen(app.get('port'), function () {
-  // Toon een bericht in de console en geef het poortnummer door
-  console.log(`Application started on http://localhost:${app.get('port')}`)
+app.listen(app.get('port'), () => {
+  console.log(`App gestart op http://localhost:${app.get('port')}`)
 })

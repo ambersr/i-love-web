@@ -8,7 +8,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,11 @@
   "homepage": "https://github.com/ambersr/i-love-web#readme",
   "dependencies": {
     "express": "^5.1.0",
+    "gray-matter": "^4.0.3",
     "liquidjs": "^10.21.0",
     "marked": "^15.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
