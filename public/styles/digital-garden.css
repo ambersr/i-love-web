@@ -1,11 +1,31 @@
-form.width {
+.hero-digital-garden {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: center;
+
+        @media screen and (min-width: 740px) {
+            width: 35em;
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+
+form.width-top {
     width: 100%;
     z-index: 98;
     justify-content: center;
     display: flex;
     flex-direction: row;
     padding-top: 3em;
-    padding-bottom: 1em;
 
     input.search {
         width: 20em;
@@ -49,20 +69,22 @@ form.width {
     padding-top: 3em;
 
     .wrapper-experimenten {
-
         display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 1em;
+        width: 100%;
 
+        @media screen and (min-width: 720px) {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+            width: 80%;
+        }
 
         .experiment {
             display: flex;
             flex-direction: row;
             padding: 1.5em;
             border: 1px solid var(--primary-text-color);
-            width: 45%;
             justify-content: space-between;
             transition: .2s ease-in-out;
             align-items: center;
@@ -85,16 +107,11 @@ form.width {
                 h2 {
                     font-size: 20px;
                 }
-
-                .datum-dag {
-                    padding: 0;
-                }
             }
 
             .btn-arrow-red {
                 background-color: #8B1839;
-                width: 2.7em;
-                height: 2.7em;
+                padding: .7em;
                 border-radius: 100em;
                 display: flex;
                 flex-direction: row;
@@ -102,11 +119,18 @@ form.width {
                 transition: .2s ease-in-out;
 
                 img {
-                    width: 20px;
+                    width: 1em;
                 }
             }
 
         }
 
     }
+}
+
+.date-day {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: .5em;
 }
