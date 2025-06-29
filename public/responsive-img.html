@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive images experimenten</title>
+</head>
+
+<body>
+    <!-- Experiment 1 Picture element -->
+    <picture>
+        <source type="image/avif" srcset="/assets/images/italy.avif">
+        <source type="image/webp" srcset="/assets/images/italy.webp">
+        <img src="/assets/images/italy.jpg" alt="plaatje Italië" width="500" height="300" decoding="async">
+    </picture>
+
+    <!-- Experiment 2 Resolution switching -->
+    <picture>
+        <source media="(min-width: 600px)" type="image/avif" srcset="/assets/images/italy.avif">
+        <source media="(min-width: 800px)" type="image/avif" srcset="/assets/images/italy.avif 2x">
+        <source media="(min-width: 900px)" type="image/webp" srcset="/assets/images/italy.webp 2x">
+        <img media="(min-width: 1000px)" src="/assets/images/italy.jpg" srcset="/assets/images/italy.jpg 2x"
+            alt="plaatje Italië" width="500" height="300" decoding="async">
+    </picture>
+
+    <!-- Experiment 3 Art Direction -->
+    <picture>
+        <source media="(orientation: portrait)" type="image/avif" srcset="/assets/images/italy.avif" width="300"
+            height="400">
+        <source type="image/avif" srcset="/assets/images/italy.avif">
+        <source type="image/webp" srcset="/assets/images/italy.webp">
+        <img src="/assets/images/italy.jpg" alt="plaatje Italië" width="400" height="300" decoding="async">
+    </picture>
+</body>
+
+</html>
