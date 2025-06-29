@@ -1,0 +1,24 @@
+{% render 'partials/head.liquid' titel:"Daily Journal" %}
+
+<img class="element-amber-left" src="assets/images/background-element-left-1.jpg" alt="">
+
+<section class="hero-daily-journal width-top">
+    <h1>Daily Journal</h1>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus donec risus condimentum netus lobortis velit elementum
+    erat. Lacus praesent vestibulum era Tat.</p>
+
+    <!-- Tabs -->
+    <ul class="tabs width-btm">
+        {% for sprint in sprintNames %}
+        <li>
+            <a href="/daily-journal?sprint={{ sprint }}" class="{% if sprint == selectedSprint %}active{% endif %}">
+                {{ sprint }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+{% render 'partials/week.liquid' weeks: weeks %}
+
+{% render 'partials/foot.liquid' %}
