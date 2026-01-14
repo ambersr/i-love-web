@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimenteren met input types</title>
+</head>
+
+<body>
+    <form action="/">
+            <!-- Password -->
+            <label for="password">Password
+                <input type="password" id="password" placeholder="Type here your password">
+            </label>
+
+            <!-- Range -->
+            <label for="Slider">Slider
+                <input type="password" id="slider">
+            </label>
+
+            <fieldset>
+                <legend>Experiment form elementen</legend>
+                <!-- Radio -->
+                <label for="option">Optie 1
+                    <input type="radio" id="option">
+                </label>
+
+                <label for="option-2">Optie 2
+                    <input type="radio" id="option-2">
+                </label>
+                <label for="option-3">Optie 3
+                    <input type="radio" id="option-3">
+                </label>
+            </fieldset>
+
+            <button>Verzend formulier</button>
+    </form>
+</body>
+
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+</style>
+
+</html>

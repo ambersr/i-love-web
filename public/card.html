@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimenteren met input types</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <article>
+        <img class="hero" src="./assets/images/hero.png" alt="">
+        <div class="info-wrapper">
+            <h1>Wandeling door het bos</h1>
+            <div class="divider"></div>
+            <div class="more-info">
+                <p class="date"><span>14</span><span>JAN</span></p>
+                <ul class="info">
+                    <li><img src="./assets/images/map.svg" alt="">
+                        <p>Amsterdamse bos</p>
+                    </li>
+                    <li><img src="./assets/images/clock.svg" alt="">
+                        <p>12:00 - 15:00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <ul class="categories">
+                <li class="categorie">
+                    <p>OUTDOORS</p>
+                </li>
+                <li class="categorie">
+                    <p>FREE</p>
+                </li>
+                <li class="categorie">
+                    <p>ACTIVITY</p>
+                </li>
+            </ul>
+        </div>
+    </article>
+</body>
+
+<style>
+
+    body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+    }
+    article {
+        background-color: #F7F7F7;
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        border-radius: 0 0 10px 10px;
+
+        .hero {
+        border-radius: 0 0 10px 10px;
+        }
+
+
+        .info-wrapper {
+            padding: 15px 17px 17px 17px;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            h1 {
+                font-family: "Roboto", sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                margin: 0;
+            }
+
+            .divider {
+                background-color: rgb(41, 41, 41, 0.1);
+                height: 1px;
+            }
+
+            .more-info {
+                display: flex;
+                align-items: center;
+                padding: .2em;
+
+                .date {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 700;
+                    margin: 0;
+                    color: rgb(41, 41, 41, 1);
+                    
+                    span {
+                        font-size: 40px;
+                        margin-bottom: -.2em;
+                        color: rgb(41, 41, 41, 1);
+
+                        &:nth-of-type(2) {
+                            font-size: 23px;
+                        }
+                    }
+                }
+
+                .info {
+                    list-style-type: none;
+                    gap: .7em;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+
+                    li {
+                        display: flex;
+                        gap: .4em;
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 400;
+                        font-size: 18px;
+                        margin: 0;
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .categories {
+                list-style-type: none;
+                margin: 0;
+                display: flex;
+                gap: .5em;
+                padding: 0;
+                margin: -.2em 0 0 0 ;
+
+                p {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 600;
+                    font-size: 12px;
+                    background-color: rgb(41, 41, 41, 0.2);
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+</style>
+
+</html>
